@@ -1,9 +1,17 @@
-const add = () => {};
+const add = (numberOne, numberTwo) => {
+	return numberOne + numberTwo;
+};
 
-const divide = () => {};
+const divide = (numberOne, numberTwo) => {
+	return numberOne / numberTwo;
+};
 
-const multiply = () => {};
+const multiply = (numberOne, numberTwo) => {
+	return numberOne * numberTwo;
+};
 
-const subtract = () => {};
+const subtract = (numberOne, numberTwo) => {
+	return numberOne - numberTwo;
+};
 
 export { add, divide, multiply, subtract };
