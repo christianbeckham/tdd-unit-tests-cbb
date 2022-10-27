@@ -8,11 +8,11 @@ describe("Test capitalizeFirstLetter function with string", () => {
 	const str = capitalizeFirstLetter("lorem ipsum");
 
 	it("should return 'Lorem ipsum' with uppercase 'L'", () => {
-		expect(str).toMatch("/Lorem ipsum/");
+		expect(str).toMatch(/Lorem ipsum/);
 	});
 
 	it("should not return 'lorem ipsum' with lowercase 'l'", () => {
-		expect(str).not.toMatch("/lorem ipsum/");
+		expect(str).not.toMatch(/lorem ipsum/);
 	});
 });
 
@@ -20,11 +20,11 @@ describe("Test concatTwoStrings function with string", () => {
 	const str = concatTwoStrings("Java", "Script");
 
 	it("should return 'JavaScript'", () => {
-		expect(str).toMatch("/JavaScript/");
+		expect(str).toMatch(/JavaScript/);
 	});
 
 	it("should not return 'Java Script'", () => {
-		expect(str).not.toMatch("/Java Script/");
+		expect(str).not.toMatch(/Java Script/);
 	});
 });
 
